@@ -1,5 +1,17 @@
 # hse22_hw1
 
+## Описание файлов
+
+- Ниже в README - исполняемые команды
+- images - скриншоты статистики multiqc:
+  - general_statistics.png, fastqc_per_sequence_quality_scores_plot.png - необрезанных чтений
+  - general_statistics_trimmed.pngб fastqc_per_sequence_quality_scores_plot_trimmed.png - обрезанных
+- data - .fa файлы и .ipynb файл с кодом
+  - Poil_contig.fa - контиги
+  - Poil_scaffold.fa - скаффолды
+  - Poil_closed_gaps.fa - уменьшение гэпов
+  - Contig_scaffold_analysis.ipynb - ноутбук с кодом
+
 ## Исполняемые команды
 
 ### 1. Создание ссылок
