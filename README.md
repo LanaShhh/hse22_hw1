@@ -82,5 +82,10 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2
 
 
 ## Отчеты
+### Без обрезки
+![](https://github.com/LanaShhh/hse22_hw1/blob/main/images/general_statistics.png)
+![](https://github.com/LanaShhh/hse22_hw1/blob/main/images/fastqc_per_sequence_quality_scores_plot.png)
 
-Отчеты находятся в папке images
+### С обрезкой
+![](https://github.com/LanaShhh/hse22_hw1/blob/main/images/general_statistics_trimmed.png)
+![](https://github.com/LanaShhh/hse22_hw1/blob/main/images/fastqc_per_sequence_quality_scores_plot_trimmed.png)
