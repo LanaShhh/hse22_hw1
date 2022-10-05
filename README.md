@@ -55,6 +55,11 @@ multiqc -o multiqc_trimmed fastqc_trimmed
 
 ### 8. Сбор контигов
 ```
-time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
+time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> platanus_assemble.log
+```
+
+### 9. Сбор скаффолдов
+```
+time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 sub_mp1.fastq.int_trimmed sub_mp2.fastq.int_trimmed 2> scaffold.log
 ```
 
