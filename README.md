@@ -5,7 +5,7 @@
 - Ниже в README - исполняемые команды
 - images - скриншоты статистики multiqc:
   - general_statistics.png, fastqc_per_sequence_quality_scores_plot.png - необрезанных чтений
-  - general_statistics_trimmed.pngб fastqc_per_sequence_quality_scores_plot_trimmed.png - обрезанных
+  - general_statistics_trimmed.png, fastqc_per_sequence_quality_scores_plot_trimmed.png - обрезанных
 - data - .fa файлы и .ipynb файл с кодом
   - Poil_contig.fa - контиги
   - Poil_scaffold.fa - скаффолды
