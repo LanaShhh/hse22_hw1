@@ -11,6 +11,9 @@
   - Poil_scaffold.fa - скаффолды
   - Poil_closed_gaps.fa - уменьшение гэпов
   - Contig_scaffold_analysis.ipynb - ноутбук с кодом
+- reports - отчеты multiqc
+  - multiqc_report - без обрезки
+  - multiqc_report_trimmed - с обрезкой
 
 ## Исполняемые команды
 
