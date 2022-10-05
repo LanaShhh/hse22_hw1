@@ -24,7 +24,7 @@ mkdir fastqc
 ls sub* | xargs -tI{} fastqc -o fastqc {}
 ```
 
-### 4. Оценка чтений через multiqc
+### 4. Оценка чтений через multiQC
 ```
 mkdir multiqc
 multiqc -o multiqc fastqc
@@ -35,3 +35,26 @@ multiqc -o multiqc fastqc
 platanus_trim sub1.fastq sub2.fastq
 platanus_internal_trim sub_mp1.fastq sub_mp2.fastq
 ```
+
+#### Удаляем исходные .fastq файлы
+```
+rm sub1.fastq sub2.fastq sub_mp1.fastq sub_mp2.fastq
+```
+
+### 6. Оценка обрезанных чтений через fastQC
+```
+mkdir fastqc_trimmed
+ls sub* | xargs -tI{} fastqc -o fastqc_trimmed {}
+```
+
+### 7. Оценка обрезанных чтений через multiQC
+```
+mkdir multiqc_trimmed
+multiqc -o multiqc_trimmed fastqc_trimmed
+```
+
+### 8. Сбор контигов
+```
+time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
+```
+
