@@ -63,3 +63,7 @@ time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> plata
 time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 sub_mp1.fastq.int_trimmed sub_mp2.fastq.int_trimmed 2> scaffold.log
 ```
 
+### 10. Уменьшение количества гэпов
+```
+time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 sub_mp1.fastq.int_trimmed sub_mp2.fastq.int_trimmed 2> gapclose.log
+```
